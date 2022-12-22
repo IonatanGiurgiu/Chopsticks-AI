@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chopsticks Game</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="gameControl.js"></script>
+  </head>
+  <body>
+    <div class="game-area">
+        <div id="game-info"></div>
+        <div id="turn-info">Waiting to start game...</div>
+        <div class="green-box-p1" id="top-left-hand" onclick="handClicked(this.id)">0</div>
+        <div class="green-box-p1" id="top-right-hand" onclick="handClicked(this.id)">0</div>
+        <br>
+        <div class="green-box-p2" id="bottom-left-hand" onclick="handClicked(this.id)">0</div>
+        <div class="green-box-p2" id="bottom-right-hand" onclick="handClicked(this.id)">0</div>
+        <div id="game-value-info"></div>
+    </div>
+    <div class="game-settings">
+        <div>
+            <label for="number-input">Hand dies at (2-30):</label>
+            <input type="number" id="number-input" value="9">
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox-split" checked>
+            <label for="checkbox-split">Allow splitting (select both hands, 0 and even only)</label>
+        </div>
+          
+        <div>
+            <input type="checkbox" id="checkbox-showresult" checked>
+            <label for="checkbox-showresult">Show theoretical game result</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="checkbox-whostarts" checked>
+            <label for="checkbox-whostarts">Human (bottom player) moves first</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="checkbox-longestwin">
+            <label for="checkbox-longestwin">First player starts on the longest theoretical win</label>
+        </div>
+        
+        
+        <div>
+            <input type="radio" id="radio1" name="radio-group1" checked>
+            <label for="radio1">Play vs AI</label>
+            <br>
+            <input type="radio" id="radio2" name="radio-group1">
+            <label for="radio2">2 Player</label>
+        </div>
+        <button onclick="startGame()">Start new game</button>
+    </div>
+  </body>
+</html>

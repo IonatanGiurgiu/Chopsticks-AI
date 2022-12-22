@@ -1,0 +1,31 @@
+#number-input{
+    width: 40px;
+}
+
+
+.green-box-p1, .green-box-p2 {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 80px;
+    line-height: 100px;
+}
+
+
+.green-box-p1{
+    background-color: rgb(73, 77, 185);
+}
+.green-box-p2{
+    background-color: rgb(42, 188, 42);
+}
+
+
+.game-settings{
+    margin-top: 15vh;
+}
+#game-info{
+    font-weight: bold;
+    font-size: large;
+}
