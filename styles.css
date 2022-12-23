@@ -3,29 +3,50 @@
 }
 
 
-.green-box-p1, .green-box-p2 {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
+.box-top-player, .box-bottom-player {
+    width: min(25vh, 40vw);
+    height: min(25vh, 40vw);
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
     display: inline-block;
     text-align: center;
-    font-size: 80px;
-    line-height: 100px;
+    font-size: min(25vh, 40vw);
+    line-height: min(25vh, 40vw);
+    border-radius: 5px;
 }
 
-
-.green-box-p1{
+.box-top-player{
     background-color: rgb(73, 77, 185);
 }
-.green-box-p2{
+.box-bottom-player{
     background-color: rgb(42, 188, 42);
 }
 
+.game-area, .game-settings-box{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .game-settings{
-    margin-top: 15vh;
+    margin-top: 10vh;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
 }
+
 #game-info{
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+
+#startGameButton{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
 }
